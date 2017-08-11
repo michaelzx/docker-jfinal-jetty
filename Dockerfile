@@ -15,7 +15,7 @@ RUN curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz \
     && rm -fr javadoc \
     && rm jetty.tar.gz* \
     && rm contexts/test.xml \
-    && rm contexts/test.d
+    && rm -fr contexts/test.d
 
 EXPOSE 8080
 CMD ["jetty.sh", "run"]

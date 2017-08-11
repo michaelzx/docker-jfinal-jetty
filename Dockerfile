@@ -20,7 +20,7 @@ RUN curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz \
     && rm contexts/test.xml \
     && rm -fr contexts/test.d \
     && rm webapps/spdy.war \
-    && rm webapps/test.war \
+    && rm webapps/test.war
 
 EXPOSE 8080
 CMD ["jetty.sh", "run"]
